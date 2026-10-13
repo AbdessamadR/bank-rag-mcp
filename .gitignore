@@ -1,0 +1,24 @@
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Rapports et données locales
+data/raw/
+data/processed/
+
+# Base vectorielle et modèles
+chroma_db/
+vectorstore/
+models/
+
+# IDE
+.vscode/
+.idea/
