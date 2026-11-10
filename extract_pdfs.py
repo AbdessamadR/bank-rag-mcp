@@ -1,3 +1,4 @@
+# Extraction du contenu des PDF page par page, ajout des métadonnées et sauvegarde des résultats au format JSON
 
 import json
 from pathlib import Path

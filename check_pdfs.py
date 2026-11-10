@@ -1,3 +1,4 @@
+# Extraction et vérification du texte de tous les fichiers PDF du dossier data/raw
 
 import fitz
 from pathlib import Path

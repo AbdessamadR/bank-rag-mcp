@@ -1,0 +1,143 @@
+
+[
+  {
+    "id": "Q001",
+    "question": "Quel est le produit net bancaire consolidé en 2024 ?",
+    "year": "2024",
+    "relevant_chunks": ["2024_35_1"],
+    "expected_answer": "34,5 milliards de dirhams"
+  },
+  {
+    "id": "Q002",
+    "question": "Quelle est la progression du produit net bancaire consolidé entre 2023 et 2024 ?",
+    "year": "2024",
+    "relevant_chunks": ["2024_35_1"],
+    "expected_answer": "15,2 %"
+  },
+  {
+    "id": "Q003",
+    "question": "Quel est le résultat net consolidé en 2024 ?",
+    "year": "2024",
+    "relevant_chunks": ["2024_35_5"],
+    "expected_answer": "11,7 milliards de dirhams"
+  },
+  {
+    "id": "Q004",
+    "question": "Quel était le coefficient d'emploi crédits/dépôts en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_18_6"],
+    "expected_answer": "96,1 %"
+  },
+  {
+    "id": "Q005",
+    "question": "Quel était le montant des risques transfrontaliers du groupe en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_56_1"],
+    "expected_answer": "200 637 millions de dirhams"
+  },
+  {
+    "id": "Q006",
+    "question": "Quelle était la part de la zone UMOA dans les risques transfrontaliers en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_56_1"],
+    "expected_answer": "37 %"
+  },
+  {
+    "id": "Q007",
+    "question": "Quel taux d'actualisation a été retenu au 31 décembre 2023 pour l'UGT BDI ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_104_7"],
+    "expected_answer": "16,4 %"
+  },
+  {
+    "id": "Q008",
+    "question": "Quel est l'encours global de Wafa Immobilier en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_22_2"],
+    "expected_answer": "72,7 milliards de dirhams"
+  },
+  {
+    "id": "Q009",
+    "question": "Quel est le taux de croissance des dépôts d'investissement en 2025 ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_25_2"],
+    "expected_answer": "10 %"
+  },
+  {
+    "id": "Q010",
+    "question": "Quelle est la valeur des écarts d'acquisition au 31 décembre 2025 ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_82_8"],
+    "expected_answer": "10 289 millions de dirhams"
+  },
+  {
+    "id": "Q011",
+    "question": "Quel logiciel la banque utilise-t-elle pour gérer les risques de marché et de contrepartie ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_51_9"],
+    "expected_answer": "Murex"
+  },
+  {
+    "id": "Q012",
+    "question": "Quels sont les principaux indicateurs utilisés pour suivre les risques financiers liés au changement climatique ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_61_4"],
+    "expected_answer": "L'exposition aux secteurs intensifs en émissions, la répartition sectorielle des financements et la vulnérabilité géographique aux risques physiques."
+  },
+  {
+    "id": "Q013",
+    "question": "À quelle fréquence le comité ALM se réunit-il ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_63_5"],
+    "expected_answer": "Trimestriellement"
+  },
+  {
+    "id": "Q014",
+    "question": "Quel était le résultat net part du groupe en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_34_5"],
+    "expected_answer": "7,5 milliards de dirhams"
+  },
+  {
+    "id": "Q015",
+    "question": "Quel était le ROaE en 2024 ?",
+    "year": "2024",
+    "relevant_chunks": ["2024_35_5"],
+    "expected_answer": "16,78 %"
+  },
+  {
+    "id": "Q016",
+    "question": "Quel était le ROaA en 2024 ?",
+    "year": "2024",
+    "relevant_chunks": ["2024_35_5"],
+    "expected_answer": "1,69 %"
+  },
+  {
+    "id": "Q017",
+    "question": "Quel était le produit net bancaire consolidé en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_34_1"],
+    "expected_answer": "29,9 milliards de dirhams"
+  },
+  {
+    "id": "Q018",
+    "question": "Quel était le produit net bancaire consolidé en 2025 ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_31_1"],
+    "expected_answer": "34,9 milliards de dirhams"
+  },
+  {
+    "id": "Q019",
+    "question": "Quelle était la progression du produit net bancaire consolidé en 2025 ?",
+    "year": "2025",
+    "relevant_chunks": ["2025_31_1"],
+    "expected_answer": "5,6 %"
+  },
+  {
+    "id": "Q020",
+    "question": "De combien le résultat net part du groupe a-t-il progressé en 2023 ?",
+    "year": "2023",
+    "relevant_chunks": ["2023_34_5"],
+    "expected_answer": "23,0 %"
+  }
+]

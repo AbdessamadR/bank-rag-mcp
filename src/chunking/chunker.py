@@ -1,3 +1,4 @@
+# Découpage des textes extraits en chunks avec chevauchement, conservation des métadonnées et sauvegarde des résultats au format JSON
 
 import json
 from pathlib import Path

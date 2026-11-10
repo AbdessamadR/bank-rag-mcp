@@ -22,3 +22,5 @@ models/
 # IDE
 .vscode/
 .idea/
+data/evaluation/random_samples.txt
+data/vectorstore/

@@ -1,3 +1,4 @@
+# Audit de la qualité du corpus extrait : statistiques par année, détection des pages courtes et des caractères de remplacement, puis identification des cinq pages les plus courtes
 
 import json
 from pathlib import Path

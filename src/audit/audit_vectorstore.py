@@ -15,7 +15,10 @@ CHROMA_PATH = (
     PROJECT_ROOT / "data" / "vectorstore" / "chroma_db"
 )
 
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+# Configuration E5-Base
+MODEL_NAME = "intfloat/multilingual-e5-base"
+COLLECTION_NAME = "bank_reports_e5"
+QUERY_PREFIX = "query: "
 
 EXPECTED_CHUNKS = 3992
 
@@ -39,6 +42,7 @@ TEST_QUERY = (
 # ============================================================
 
 def audit_collection(collection, model):
+
     total = collection.count()
 
     print("\n" + "-" * 60)
@@ -73,6 +77,7 @@ def audit_collection(collection, model):
     offset = 0
 
     while offset < total:
+
         batch = collection.get(
             limit=BATCH_SIZE,
             offset=offset,
@@ -89,6 +94,7 @@ def audit_collection(collection, model):
         for chunk_id, document, metadata in zip(
             ids, documents, metadatas
         ):
+
             # Vérification des identifiants
             if chunk_id in seen_ids:
                 duplicate_ids += 1
@@ -155,20 +161,21 @@ def audit_collection(collection, model):
         print(f"{source} : {count} chunks")
 
     # --------------------------------------------------------
-    # 4. TEST DE RECHERCHE SÉMANTIQUE
+    # 4. TEST DE RECHERCHE SÉMANTIQUE AVEC E5
     # --------------------------------------------------------
 
-    print("\n--- TEST DE RECHERCHE SÉMANTIQUE ---")
+    print("\n--- TEST DE RECHERCHE SÉMANTIQUE E5 ---")
     print(f"Question : {TEST_QUERY}")
 
     if total == 0:
         print("Recherche impossible : collection vide.")
         return
 
-    # Le même modèle est utilisé pour les documents
-    # et pour la question.
+    # E5 exige le préfixe query: pour les questions.
+    query_text = QUERY_PREFIX + TEST_QUERY
+
     query_embedding = model.encode(
-        [TEST_QUERY],
+        [query_text],
         normalize_embeddings=True,
         show_progress_bar=False,
     )
@@ -193,6 +200,7 @@ def audit_collection(collection, model):
         return
 
     for i, chunk_id in enumerate(result_ids):
+
         metadata = result_metas[i] or {}
         document = result_docs[i] or ""
         distance = result_distances[i]
@@ -212,8 +220,9 @@ def audit_collection(collection, model):
 # ============================================================
 
 def main():
+
     print("=" * 60)
-    print("AUDIT DE LA BASE VECTORIELLE CHROMADB")
+    print("AUDIT DE LA BASE VECTORIELLE CHROMADB - E5")
     print("=" * 60)
 
     print(f"\nChemin : {CHROMA_PATH}")
@@ -228,29 +237,32 @@ def main():
         path=str(CHROMA_PATH)
     )
 
+    # Vérifier que la collection E5 existe
     collections = client.list_collections()
 
-    if not collections:
-        print("ERREUR : aucune collection trouvée.")
-        return
+    collection_names = [
+        item.name if hasattr(item, "name") else str(item)
+        for item in collections
+    ]
 
-    print(f"\nCollections trouvées : {len(collections)}")
+    print(f"\nCollections trouvées : {collection_names}")
 
-    # Charger le modèle utilisé lors de l'indexation
+    if COLLECTION_NAME not in collection_names:
+        raise ValueError(
+            f"Collection introuvable : {COLLECTION_NAME}"
+        )
+
+    # Chargement du modèle E5
     print(f"\nChargement du modèle : {MODEL_NAME}")
 
     model = SentenceTransformer(MODEL_NAME)
 
-    for collection_info in collections:
-        name = (
-            collection_info.name
-            if hasattr(collection_info, "name")
-            else str(collection_info)
-        )
+    # Charger uniquement la collection E5
+    collection = client.get_collection(
+        name=COLLECTION_NAME
+    )
 
-        collection = client.get_collection(name=name)
-
-        audit_collection(collection, model)
+    audit_collection(collection, model)
 
     print("\n" + "=" * 60)
     print("AUDIT TERMINÉ")

@@ -1,0 +1,395 @@
+{
+    "model": "intfloat/multilingual-e5-base",
+    "collection": "bank_reports_e5",
+    "retrieval_method": "E5 + BM25 + RRF",
+    "top_k": 5,
+    "number_of_questions": 20,
+    "metrics": {
+        "hit_rate": 1.0,
+        "recall": 1.0,
+        "mrr": 0.825,
+        "ndcg": 0.869253606521631
+    },
+    "evaluations": [
+        {
+            "id": "Q001",
+            "question": "Quel est le produit net bancaire consolidé en 2024 ?",
+            "year": "2024",
+            "relevant_chunks": [
+                "2024_35_1"
+            ],
+            "retrieved_chunks": [
+                "2024_35_1",
+                "2024_35_5",
+                "2024_26_9",
+                "2024_20_5",
+                "2024_35_2"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q002",
+            "question": "Quelle est la progression du produit net bancaire consolidé entre 2023 et 2024 ?",
+            "year": "2024",
+            "relevant_chunks": [
+                "2024_35_1"
+            ],
+            "retrieved_chunks": [
+                "2024_35_1",
+                "2024_26_9",
+                "2024_35_5",
+                "2024_20_5",
+                "2024_35_2"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q003",
+            "question": "Quel est le résultat net consolidé en 2024 ?",
+            "year": "2024",
+            "relevant_chunks": [
+                "2024_35_5"
+            ],
+            "retrieved_chunks": [
+                "2024_35_5",
+                "2024_26_9",
+                "2024_35_1",
+                "2024_35_4",
+                "2024_35_2"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q004",
+            "question": "Quel était le coefficient d'emploi crédits/dépôts en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_18_6"
+            ],
+            "retrieved_chunks": [
+                "2023_18_6",
+                "2023_18_4",
+                "2023_15_7",
+                "2023_35_3",
+                "2023_29_4"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q005",
+            "question": "Quel était le montant des risques transfrontaliers du groupe en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_56_1"
+            ],
+            "retrieved_chunks": [
+                "2023_56_1",
+                "2023_34_4",
+                "2023_55_6",
+                "2023_55_2",
+                "2023_55_4"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q006",
+            "question": "Quelle était la part de la zone UMOA dans les risques transfrontaliers en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_56_1"
+            ],
+            "retrieved_chunks": [
+                "2023_55_6",
+                "2023_56_1",
+                "2023_15_2",
+                "2023_55_4",
+                "2023_9_6"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714575
+        },
+        {
+            "id": "Q007",
+            "question": "Quel taux d'actualisation a été retenu au 31 décembre 2023 pour l'UGT BDI ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_104_7"
+            ],
+            "retrieved_chunks": [
+                "2023_104_7",
+                "2023_104_5",
+                "2023_112_1",
+                "2023_104_2",
+                "2023_65_3"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q008",
+            "question": "Quel est l'encours global de Wafa Immobilier en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_22_2"
+            ],
+            "retrieved_chunks": [
+                "2023_22_2",
+                "2023_22_3",
+                "2023_23_3",
+                "2023_21_5",
+                "2023_23_4"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q009",
+            "question": "Quel est le taux de croissance des dépôts d'investissement en 2025 ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_25_2"
+            ],
+            "retrieved_chunks": [
+                "2025_30_6",
+                "2025_25_2",
+                "2025_20_3",
+                "2025_20_4",
+                "2025_27_1"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714575
+        },
+        {
+            "id": "Q010",
+            "question": "Quelle est la valeur des écarts d'acquisition au 31 décembre 2025 ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_82_8"
+            ],
+            "retrieved_chunks": [
+                "2025_82_8",
+                "2025_82_10",
+                "2025_103_9",
+                "2025_103_5",
+                "2025_97_6"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q011",
+            "question": "Quel logiciel la banque utilise-t-elle pour gérer les risques de marché et de contrepartie ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_51_9"
+            ],
+            "retrieved_chunks": [
+                "2023_51_9",
+                "2023_42_9",
+                "2023_38_3",
+                "2023_51_3",
+                "2023_53_8"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q012",
+            "question": "Quels sont les principaux indicateurs utilisés pour suivre les risques financiers liés au changement climatique ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_61_4"
+            ],
+            "retrieved_chunks": [
+                "2025_61_4",
+                "2025_19_9",
+                "2025_61_5",
+                "2025_61_3",
+                "2025_19_6"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q013",
+            "question": "À quelle fréquence le comité ALM se réunit-il ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_63_5"
+            ],
+            "retrieved_chunks": [
+                "2025_63_5",
+                "2025_63_6",
+                "2025_65_3",
+                "2025_75_5",
+                "2025_148_7"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q014",
+            "question": "Quel était le résultat net part du groupe en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_34_5"
+            ],
+            "retrieved_chunks": [
+                "2023_34_4",
+                "2023_26_4",
+                "2023_21_6",
+                "2023_34_5",
+                "2023_97_6"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.43067655807339306
+        },
+        {
+            "id": "Q015",
+            "question": "Quel était le ROaE en 2024 ?",
+            "year": "2024",
+            "relevant_chunks": [
+                "2024_35_5"
+            ],
+            "retrieved_chunks": [
+                "2024_35_6",
+                "2024_35_5",
+                "2024_18_2",
+                "2024_15_4",
+                "2024_10_8"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714575
+        },
+        {
+            "id": "Q016",
+            "question": "Quel était le ROaA en 2024 ?",
+            "year": "2024",
+            "relevant_chunks": [
+                "2024_35_5"
+            ],
+            "retrieved_chunks": [
+                "2024_35_6",
+                "2024_35_5",
+                "2024_18_2",
+                "2024_15_4",
+                "2024_10_8"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.5,
+            "ndcg": 0.6309297535714575
+        },
+        {
+            "id": "Q017",
+            "question": "Quel était le produit net bancaire consolidé en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_34_1"
+            ],
+            "retrieved_chunks": [
+                "2023_34_1",
+                "2023_21_6",
+                "2023_34_4",
+                "2023_26_4",
+                "2023_19_5"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q018",
+            "question": "Quel était le produit net bancaire consolidé en 2025 ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_31_1"
+            ],
+            "retrieved_chunks": [
+                "2025_31_1",
+                "2025_31_4",
+                "2025_21_5",
+                "2025_17_7",
+                "2025_31_2"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q019",
+            "question": "Quelle était la progression du produit net bancaire consolidé en 2025 ?",
+            "year": "2025",
+            "relevant_chunks": [
+                "2025_31_1"
+            ],
+            "retrieved_chunks": [
+                "2025_31_1",
+                "2025_31_4",
+                "2025_21_5",
+                "2025_31_2",
+                "2025_17_7"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 1.0,
+            "ndcg": 1.0
+        },
+        {
+            "id": "Q020",
+            "question": "De combien le résultat net part du groupe a-t-il progressé en 2023 ?",
+            "year": "2023",
+            "relevant_chunks": [
+                "2023_34_5"
+            ],
+            "retrieved_chunks": [
+                "2023_34_4",
+                "2023_21_6",
+                "2023_26_4",
+                "2023_34_5",
+                "2023_97_6"
+            ],
+            "hit_rate": 1.0,
+            "recall": 1.0,
+            "mrr": 0.25,
+            "ndcg": 0.43067655807339306
+        }
+    ]
+}
